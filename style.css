@@ -1,0 +1,126 @@
+/* ===== Body ===== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* ===== Hoofdcontainer ===== */
+.bord-container {
+  display: flex;
+  width: 800px;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ===== Links: klok ===== */
+.klok-blok {
+  width: 120px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 5px solid #002775;
+}
+
+.klok {
+  font-size: 28px;
+  font-weight: bold;
+  color: #003399;
+}
+
+/* ===== Midden: treininformatie ===== */
+.midden-blok {
+  flex: 1;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  position: relative;
+}
+
+.type {
+  font-size: 25px;
+  font-weight: bold;
+  color: #003399;
+  margin-bottom: 5px;
+  margin-top: 6px;
+  margin-left: 300px;
+  position: absolute;
+  top: 20px;
+  right:110px;
+}
+.vertrek {
+  font-size: 24px;
+  color: #012a7c;
+  font-weight: bold;
+}
+
+.bestemming {
+  font-size: 36px;
+  font-weight: bold;
+  color: #003399;
+  margin: 5px 0;
+}
+
+
+.via {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.ns-logo {
+  width: 80px;
+  height: 35px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: block;
+}
+
+.spoorbord-afbeelding {
+  width: 575px;
+  height: 60px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+
+
+/* Blauwe "Hierna/next" balk */
+.hierna {
+  width: 100%;
+  background-color: #003399;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* ===== Rechts: spoor ===== */
+.spoor-blok {
+  width: 100px;
+  background-color: #02256d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+

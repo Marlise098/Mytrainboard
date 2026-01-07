@@ -1,22 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weekopdracht - NS-Treinbord</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NS Trein Informatiebord</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <div id="left">
-            <!-- hier komt de klok -->
-        </div>
-        <div id="middle">
-            <!-- Hier komt de reizigers info -->
-        </div>
-        <div id="right">
-            <!-- hier komt het spoor nummer en bla bla -->
-        </div>
+
+  <!-- Hoofdcontainer van het bord -->
+  <div class="bord-container">
+
+    <!-- Links: klok -->
+    <div class="klok-blok">
+      <div class="klok" id="klok">--:--</div>
     </div>
+
+    <!-- Midden: treininformatie -->
+    <div class="midden-blok">
+      <div class="vertrek-info">
+        <div class="trein-rij">
+          <span class="minuut" id="vertrektijd" data-time="08:54">1 minuut</span>
+          <span class="bestemming">Heerlen</span>
+        </div>
+        <p class="via">via 's-Hertogenbosch, Eindhoven, Weert, Roermond en Sittard</p>
+        <p class="type">Intercity</p>
+        <img src="ns_logo.png" alt="NS Logo" class="ns-logo">
+        <img src="1920_perronbordnew.png" alt="Spoorbord" class="spoorbord-afbeelding">
+      </div>
+    </div>
+
+    <!-- Rechts: spoor -->
+    <div class="spoor-blok">
+      <span class="spoor-nummer">18b</span>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
