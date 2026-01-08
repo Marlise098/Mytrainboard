@@ -1,4 +1,4 @@
-// ===== Functie om de huidige tijd bij te werken =====
+// Functie om de klok bij te werken
 function updateKlok() {
   const klok = document.getElementById('klok');
   const now = new Date();
@@ -7,20 +7,21 @@ function updateKlok() {
   klok.textContent = `${uren}:${minuten}`;
 }
 
-// Update klok elke seconde
+// Update de klok elke seconde
 setInterval(updateKlok, 1000);
-updateKlok(); // direct bij laden
+updateKlok(); 
 
-// ===== Wissel de vertrektijd tussen countdown en echte tijd =====
+// Treinvertrektijd afwisselend weergeven
 const vertrektijdElement = document.getElementById('vertrektijd');
 let showCountdown = true;
 
 setInterval(() => {
   if (showCountdown) {
-    vertrektijdElement.textContent = vertrektijdElement.getAttribute('data-time'); // echte vertrektijd
+    vertrektijdElement.textContent = vertrektijdElement.getAttribute('data-time'); 
   } else {
     vertrektijdElement.textContent = "1 minuut";
   }
   showCountdown = !showCountdown;
-}, 5000); // wisselt elke 5 seconden
+}, 5000);
+
 
