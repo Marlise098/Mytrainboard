@@ -1,20 +1,3 @@
-
-
-
-
-// Treinvertrektijd afwisselend weergeven
-const vertrektijdElement = document.getElementById('vertrektijd');
-let showCountdown = true;
-
-setInterval(() => {
-  if (showCountdown) {
-    vertrektijdElement.textContent = vertrektijdElement.getAttribute('data-time'); 
-  } else {
-    vertrektijdElement.textContent = "1 minuut";
-  }
-  showCountdown = !showCountdown;
-}, 5000);
-
 window.addEventListener('load', function(){
   var minutenEl = document.getElementById('minuten');
 
@@ -45,5 +28,3 @@ function render() {
   document.getElementById('wijzer-min').style.transform = 'rotate(' + (( uur * 360 ) + (min/60*360 + 180)) + 'deg)';
   document.getElementById('wijzer-uur').style.transform = 'rotate(' + ((min/60*(360/12)) + (uur%12)/12*360 + 180) + 'deg)';
 }
-
-

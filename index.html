@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NS Trein Informatiebord</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- Hoofdcontainer van het bord -->
@@ -13,7 +15,19 @@
 
     <!-- Links: klok -->
     <div class="klok-blok">
-      <div class="klok" id="klok">--:--</div>
+      <div id="klok">
+        <div id="wijzer-uur"></div>
+        <div id="wijzer-min"></div>
+        <div id="wijzer-sec">
+          <div class="line"></div>
+          <div class="circle"></div>
+          <div class="line"></div>
+        </div>
+        <div id="minuten"></div>
+        <div id="logo"></div>
+      </div>
+      <!-- <div id="klok"></div>  -->
+      <!-- <img id="klokimage" src="NsKlok.png" /> -->
     </div>
 
     <!-- Midden: treininformatie -->
@@ -39,10 +53,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-
